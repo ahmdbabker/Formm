@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    padding: 0 4%;
+}
+
+.nav{
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+    padding: 15px 0;
+}
+
+.nav .taking-dad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 0 10px;
+    transition: 0.3s ease;
+}
+
+.nav i{
+    font-size: 25px;
+    font-weight: bold;
+    display: none;
+}
+
+
+.nav ul li:hover{
+    background-color: #666;
+    cursor: pointer;
+    color:white;
+}
+
+@media  screen and (max-width:760px) {
+    .nav .taking-dad{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .nav .logo h1{
+        font-size: 30px;
+    }
+
+    .nav i{
+        display:block ;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .nav ul{
+     display: none;
+     width: 100%;
+    }
+
+    .nav ul.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        transition: 0.3s ease;
+        border-top: 1px solid lightgray;
+    }
+
+    .nav ul li{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    
+}
